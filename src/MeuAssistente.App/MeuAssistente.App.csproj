@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="WPF-UI" Version="4.3.0" />
+    <PackageReference Include="System.Speech" Version="8.0.0" />
+    <ProjectReference Include="..\MeuAssistente.Domain\MeuAssistente.Domain.csproj" />
+    <ProjectReference Include="..\MeuAssistente.Data\MeuAssistente.Data.csproj" />
+    <ProjectReference Include="..\MeuAssistente.Application\MeuAssistente.Application.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,15 @@
+<Window x:Class="MeuAssistente.App.Views.PostitWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Anotação fixada" Width="320" Height="270" MinWidth="260" MinHeight="200"
+        WindowStartupLocation="Manual" Topmost="True" ResizeMode="CanResizeWithGrip">
+  <Grid Background="#FFF2B2">
+    <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /></Grid.RowDefinitions>
+    <Border Background="#F4D96B" Padding="10">
+      <TextBlock Text="{Binding Titulo}" Foreground="#302A17" FontSize="14" FontWeight="Bold" TextWrapping="Wrap" />
+    </Border>
+    <TextBox Grid.Row="1" Text="{Binding Texto}" IsReadOnly="True" AcceptsReturn="True"
+             TextWrapping="Wrap" VerticalScrollBarVisibility="Auto" Background="#FFF2B2"
+             Foreground="#302A17" BorderThickness="0" Padding="10" />
+  </Grid>
+</Window>
